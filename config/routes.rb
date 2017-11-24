@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   root 'frontend#home'
   get 'about', to: 'frontend#about'
+  resources :articles
 
 end
