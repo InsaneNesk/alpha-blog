@@ -1,4 +1,4 @@
-<h2>TEST</h2>
+<h1>Edit Article</h1>
 
 <% if  @article.errors.any? %>
     <h4>Invalid entries</h4>
@@ -10,10 +10,10 @@
 <% end %>
 
 <%= form_for @article do |form|%>
-  <p>
-    <%= form.label :title %> </br>
-    <%= form.text_field :title %>
-  </p>
+    <p>
+      <%= form.label :title %> </br>
+      <%= form.text_field :title %>
+    </p>
     <p>
       <%= form.label :description %> </br>
       <%= form.text_area :description %>
